@@ -10,6 +10,12 @@ $app->get('/user/register', function()
     echo json_encode ($data);
 }
 );
+$app->post('/user/register', function(Request $request, Response $response)
+{
+    $data = $request->getParsedbody();
+    //echo json_encode($data);
+echo 'post Product'.' '. $data['idcard'].' '.$data['password'].' '.$data['name'].' '.$data['lastname'].' '.$data['tel'];
+});
 
 $app->get('/user/login', function() 
 {
