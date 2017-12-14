@@ -26,6 +26,15 @@ $app->get('/user/login', function()
 }
 );
 
+$app->post('/User/login', function(Request $request, Response $response)
+{
+    $data = $request->getParsedBody();
+    echo 'post Login' . $data['username'] . ' ' . $data['password'];
+}
+);
+
+
+
 $app->get('/user/editprofile', function() 
 { echo '/user/editprofile'; });
 
