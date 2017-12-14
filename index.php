@@ -28,9 +28,10 @@ $app->get('/user/service', function()
 });
 
 $app->get('/room/service', function() 
+{ 
     echo '/room/service'; 
 });
-
+//ทดสอบการใช้งาน API
 $app->get('/hello/{name}', function (Request $request, Response $response) {
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
