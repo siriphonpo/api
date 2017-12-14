@@ -6,6 +6,9 @@ $app->get('/user/register', function()
 $app->get('/user/login', function() 
 { echo '/user/login'; });
 
+$app->get('/user/editprofile', function() 
+{ echo '/user/editprofile'; });
+
 $app->get('/user/post', function() 
 { echo '/user/post'; });
 
