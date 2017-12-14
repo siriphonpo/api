@@ -5,7 +5,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require 'vendor/autoload.php';
 
 $app = new \Slim\App;
-$app->get('/hi',function()
+$app->get('/hello',function()
 {
     echo 'ว่าไงพวก';
 }
@@ -25,6 +25,10 @@ $app->get('/user/post', function()
 $app->get('/user/service', function() 
 { 
     echo '/user/service'; 
+});
+
+$app->get('/room/service', function() 
+    echo '/room/service'; 
 });
 
 $app->get('/hello/{name}', function (Request $request, Response $response) {
