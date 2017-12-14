@@ -1,5 +1,6 @@
 <?php
-
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
 
 $app->get('/hello',function()
 {
@@ -10,5 +11,10 @@ $app->get('/hello',function()
     echo json_encode ($data);
 }
 );
-
+$app-> post('/register', function(Request $request, Response $response)
+{
+    $data = $request->getParsedbody();
+    echo json_encode($data);
+//echo 'post register'.' '. $data['username'].' '.$data['password'];
+});
 ?>
