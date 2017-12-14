@@ -27,8 +27,8 @@ $app->get('/user/service', function()
     echo '/user/service'; 
 });
 
-$app->get('/room/service', function() 
-    echo '/room/service'; 
+$app->get('/room/product', function() 
+    echo '/room/product'; 
 });
 
 $app->get('/hello/{name}', function (Request $request, Response $response) {
