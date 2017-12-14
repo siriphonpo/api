@@ -30,6 +30,12 @@ $app->get('/user/post', function()
     echo json_encode ($data);
 }
 );
+$app-> post('/user/post', function(Request $request, Response $response)
+{
+    $data = $request->getParsedbody();
+    //echo json_encode($data);
+echo 'post Product'.' '. $data['header'].' '.$data['comment'].' '.$data['picture'];
+});
 
 $app->get('/user/service', function() 
 { echo '/user/service'; });
