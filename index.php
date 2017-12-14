@@ -5,27 +5,11 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require 'vendor/autoload.php';
 //ทดสอบฮิว
 $app = new \Slim\App;
-$app->get('/hello',function()
-{
-    echo 'ว่าไงพวก';
-}
-);
 
-$app->get('/user/register', function()
-{
-   echo '/user/register';
-}
-);
+require 'routes/hello.php';
+require 'routes/user.php';
 
-$app->get('/user/post', function() 
-{ 
-    echo '/user/post'; 
-});
 
-$app->get('/user/service', function() 
-{ 
-    echo '/user/service'; 
-});
 
 
 $app->get('/room/product', function() {
@@ -40,9 +24,5 @@ $app->get('/hello/{name}', function (Request $request, Response $response) {
 });
 $app->run();
 
-///<<<<<<< HEAD
-///ทดสอบ บิ๊ก
-///=======
-//รักษ์ทดสอบ
 
->>>>>>> 852be12ef75a4f93218961bc07b08d09e2af8fcb
+
