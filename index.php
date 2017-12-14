@@ -7,7 +7,7 @@ require 'vendor/autoload.php';
 $app = new \Slim\App;
 $app->get('/hello',function()
 {
-    echo 'ว่าไงพวก';
+    echo 'connect to filewall';
 }
 );
 
