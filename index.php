@@ -40,5 +40,9 @@ $app->get('/hello/{name}', function (Request $request, Response $response) {
 });
 $app->run();
 
+///<<<<<<< HEAD
+///ทดสอบ บิ๊ก
+///=======
 //รักษ์ทดสอบ
 
+>>>>>>> 852be12ef75a4f93218961bc07b08d09e2af8fcb
