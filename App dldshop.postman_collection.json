@@ -1,0 +1,148 @@
+{
+	"info": {
+		"name": "App dldshop",
+		"_postman_id": "cc74149a-ed2c-e56b-0022-a3d7d360b6ab",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ลงทะเบียนผู้ใช้",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1/api/index.php/user/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"user",
+						"register"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "โพศต์สินค้า",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1/api/index.php/user/post",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"user",
+						"post"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "บริการข้อมูล",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/api/index.php/user/service",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"user",
+						"service"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ค้นหาข้อมูล",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/api/index.php/user/search",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"user",
+						"search"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ล็อกอินข้อมูล",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/api/index.php/user/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"user",
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Editข้อมูลโปรไฟล์",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost/api/index.php/user/editprofile",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"user",
+						"editprofile"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
