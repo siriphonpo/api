@@ -1,10 +1,23 @@
 <?php
 
+
 $app->get('/user/register', function()
-{echo '/user/register';});
+{
+    $data = (object) array(
+        'message' => 'สมัครสมาชิกเรียบร้อย',
+    );
+    echo json_encode ($data);
+}
+);
 
 $app->get('/user/login', function() 
-{ echo '/user/login'; });
+{
+    $data = (object) array(
+        'message' => 'ยินดีต้อนรับ',
+    );
+    echo json_encode ($data);
+}
+);
 
 $app->get('/user/editprofile', function() 
 { echo '/user/editprofile'; });
