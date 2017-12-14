@@ -27,9 +27,9 @@ $app->get('/user/service', function()
     echo '/user/service'; 
 });
 
-$app->get('/room/service', function() 
-{ 
-    echo '/room/service'; 
+
+$app->get('/room/product', function() {
+    echo '/room/product'; 
 });
 //ทดสอบการใช้งาน API
 $app->get('/hello/{name}', function (Request $request, Response $response) {
@@ -39,4 +39,6 @@ $app->get('/hello/{name}', function (Request $request, Response $response) {
     return $response;
 });
 $app->run();
+
+//รักษ์ทดสอบ
 
