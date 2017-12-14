@@ -10,12 +10,6 @@ require 'routes/hello.php';
 require 'routes/user.php';
 
 
-
-
-$app->get('/room/product', function() {
-    echo '/room/product'; 
-});
-//ทดสอบการใช้งาน API
 $app->get('/hello/{name}', function (Request $request, Response $response) {
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
