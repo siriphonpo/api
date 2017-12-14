@@ -22,10 +22,7 @@ $app->get('/user/post', function()
     echo '/user/post'; 
 });
 
-$app->get('/user/service', function() 
-{ 
-    echo '/user/service'; 
-});
+//ลบไปแล้วจ้า
 
 
 $app->get('/room/product', function() {
