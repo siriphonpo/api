@@ -5,6 +5,7 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 $app->get('/rooms', function (Request $request, Response $response) {
     $db = $this->db;
     try {
+
         $statement = $db->prepare("SELECT * FROM room");
         $statement->execute();
         $results = $statement->fetchAll();
