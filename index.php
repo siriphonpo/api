@@ -8,7 +8,7 @@ $app = new \Slim\App;
 
 require 'routes/hello.php';
 require 'routes/user.php';
-
+require 'routes/rooms.php';
 $app->get('/hello/{name}', function (Request $request, Response $response) {
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
